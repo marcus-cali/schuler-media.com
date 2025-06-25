@@ -1,0 +1,16 @@
+baseURL = 'https://schuler.media/'
+languageCode = 'en-us'
+title = 'Schuler Media'
+theme = 'minimal-llm'
+
+[params]
+  description = 'Schuler Media - Digital presence optimized for LLM accessibility'
+  author = 'Schuler Media'
+
+[outputs]
+  home = ['HTML', 'RSS', 'JSON']
+
+[sitemap]
+  changefreq = 'weekly'
+  filename = 'sitemap.xml'
+  priority = 0.5

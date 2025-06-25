@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ .Summary }}{{ end }}">
+    <meta name="author" content="{{ .Site.Params.author }}">
+    <meta name="robots" content="index, follow">
+    
+    <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}</title>
+    
+    <link rel="canonical" href="{{ .Permalink }}">
+    <link rel="sitemap" type="application/xml" href="{{ .Site.BaseURL }}sitemap.xml">
+    
+    {{ hugo.Generator }}
+    
+    <style>
+        body { font-family: system-ui, -apple-system, sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; }
+        header { border-bottom: 2px solid #333; margin-bottom: 2rem; padding-bottom: 1rem; }
+        nav ul { list-style: none; padding: 0; }
+        nav ul li { display: inline; margin-right: 1rem; }
+        main { min-height: 400px; }
+        footer { border-top: 1px solid #ccc; margin-top: 2rem; padding-top: 1rem; text-align: center; }
+        .metadata { color: #666; font-size: 0.9em; }
+        article { margin-bottom: 2rem; }
+        h1, h2, h3 { line-height: 1.2; }
+    </style>
+    
+    {{ block "head" . }}{{ end }}
+</head>
+<body>
+    <header>
+        <h1><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></h1>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about/">About</a></li>
+                <li><a href="/posts/">Posts</a></li>
+                <li><a href="/contact/">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        {{ block "main" . }}{{ end }}
+    </main>
+    
+    <footer>
+        <p>&copy; {{ now.Year }} {{ .Site.Title }}. All rights reserved.</p>
+        <p><a href="/sitemap.xml">Sitemap</a> | <a href="/index.xml">RSS Feed</a></p>
+    </footer>
+    
+    {{ if .IsHome }}
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "{{ .Site.Title }}",
+        "url": "{{ .Site.BaseURL }}",
+        "description": "{{ .Site.Params.description }}"
+    }
+    </script>
+    {{ end }}
+</body>
+</html>

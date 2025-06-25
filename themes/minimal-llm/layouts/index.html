@@ -1,0 +1,27 @@
+{{ define "main" }}
+<section>
+    <h2>Welcome to {{ .Site.Title }}</h2>
+    <p>{{ .Site.Params.description }}</p>
+    
+    {{ with .Content }}
+    <div class="content">
+        {{ . }}
+    </div>
+    {{ end }}
+    
+    <h3>Recent Posts</h3>
+    <ul>
+    {{ range first 5 (where .Site.RegularPages "Type" "posts") }}
+        <li>
+            <article>
+                <h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
+                <p class="metadata">
+                    <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+                </p>
+                <p>{{ .Summary }}</p>
+            </article>
+        </li>
+    {{ end }}
+    </ul>
+</section>
+{{ end }}
