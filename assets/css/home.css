@@ -161,37 +161,45 @@
 
 .work-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1.5rem;
   max-width: 1000px;
   margin: 0 auto;
 }
 
-.work-item {
-  background: var(--background-light);
+.work-card {
+  background: var(--white);
   padding: 1.5rem;
   border-radius: 8px;
-  border-left: 3px solid var(--primary-color);
+  border: 1px solid var(--border-light);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  position: relative;
+}
+
+.work-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .work-type {
   background: var(--primary-color);
   color: var(--white);
-  padding: 0.25rem 0.75rem;
+  padding: 0.4rem 0.8rem;
   border-radius: 4px;
   font-size: 0.8rem;
   font-weight: 500;
   display: inline-block;
+  margin-bottom: 1rem;
 }
 
-.work-item h4 {
+.work-card h3 {
   color: var(--text-dark);
-  margin: 1rem 0 0.5rem 0;
-  font-size: 1.2rem;
+  margin-bottom: 0.75rem;
+  font-size: 1.25rem;
   font-weight: 600;
 }
 
-.work-item p {
+.work-card p {
   color: var(--text-light);
   line-height: 1.6;
 }

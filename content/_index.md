@@ -53,24 +53,24 @@ title: "Home"
 <div class="work-section">
   <h2>Recent Work</h2>
   <div class="work-grid">
-    <div class="work-item">
+    <div class="work-card">
       <span class="work-type">Podcast</span>
-      <h4>AI Deep Dive</h4>
+      <h3>AI Deep Dive</h3>
       <p>Comprehensive podcast series for German public radio exploring AI's impact on society and business</p>
     </div>
-    <div class="work-item">
+    <div class="work-card">
       <span class="work-type">Broadcasting</span>
-      <h4>Tech in Context</h4>
+      <h3>Tech in Context</h3>
       <p>On-camera reporting for ARD, bringing Silicon Valley tech stories to German audiences</p>
     </div>
-    <div class="work-item">
+    <div class="work-card">
       <span class="work-type">Speaking</span>
-      <h4>Tech Policy Keynote</h4>
+      <h3>Tech Policy Keynote</h3>
       <p>Expert commentary on AI regulation, innovation policy, and the intersection of technology and governance</p>
     </div>
-    <div class="work-item">
+    <div class="work-card">
       <span class="work-type">Consulting</span>
-      <h4>AI Content Strategy</h4>
+      <h3>AI Content Strategy</h3>
       <p>Helping agencies and companies develop narrative clarity and editorial tone for AI-focused content</p>
     </div>
   </div>
