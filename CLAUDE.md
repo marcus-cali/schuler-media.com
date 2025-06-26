@@ -48,3 +48,6 @@ hugo server -D
 
 ## Maintenance Tasks
 - Deleting blind text articles on schuler media
+
+## Deployment Workflow
+- Push to github

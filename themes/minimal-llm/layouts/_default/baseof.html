@@ -26,6 +26,9 @@
         h1, h2, h3 { line-height: 1.2; }
     </style>
     
+    {{ $css := resources.Get "css/home.css" | minify }}
+    <link rel="stylesheet" href="{{ $css.Permalink }}">
+    
     {{ block "head" . }}{{ end }}
 </head>
 <body>
