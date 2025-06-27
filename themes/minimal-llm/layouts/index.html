@@ -1,26 +1,152 @@
 {{ define "main" }}
-<section>
-    <h2>Welcome to {{ .Site.Title }}</h2>
-    
-    {{ with .Content }}
-    <div class="content">
-        {{ . }}
+<!-- Hero Section -->
+<div class="hero-section">
+    <div class="container">
+        <h1 class="hero-title">Independent Media. Strategic Storytelling.</h1>
+        <p class="hero-subtitle">From Silicon Valley to America and Beyond</p>
+        <p class="hero-description">
+            Schuler Media LLC is a content studio led by journalist Marcus Schuler. We 
+            produce editorial reporting, corporate interviews, and tech keynotes for 
+            American and European audiences — all with journalistic clarity and 
+            strategic insight.
+        </p>
     </div>
-    {{ end }}
-    
-    <h3>Recent Posts</h3>
-    <ul>
-    {{ range first 5 (where .Site.RegularPages "Type" "posts") }}
-        <li>
-            <article>
-                <h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
-                <p class="metadata">
-                    <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+</div>
+
+<!-- Publications Section -->
+<section class="publications-section">
+    <div class="container">
+        <h2>Our Publications</h2>
+        <div class="publications-grid">
+            <div class="publication-card">
+                <h3>Implicator.ai</h3>
+                <p class="publication-tagline">ONE OF SILICON VALLEY'S LEADING AI NEWSLETTERS</p>
+                <p class="publication-description">
+                    In-depth analysis of the AI industry, published Monday to 
+                    Friday every morning at 6 AM PST. Essential reading for 
+                    tech leaders, investors, and innovators staying ahead of 
+                    the AI revolution.
                 </p>
-                <p>{{ .Summary }}</p>
-            </article>
-        </li>
-    {{ end }}
-    </ul>
+                <a href="https://implicator.ai" target="_blank" class="subscribe-btn">Subscribe to Implicator →</a>
+            </div>
+            <div class="publication-card">
+                <h3>Filtr.de</h3>
+                <p class="publication-tagline">EUROPEAN AI INSIGHTS IN GERMAN</p>
+                <p class="publication-description">
+                    Curated AI industry updates tailored for European 
+                    audiences. Concise, focused coverage that bridges 
+                    Silicon Valley innovation with European perspectives and 
+                    regulations.
+                </p>
+                <a href="https://filtr.de" target="_blank" class="subscribe-btn">Subscribe to Filtr →</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- What We Do Section -->
+<section class="services-section">
+    <div class="container">
+        <h2>What We Do</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>Speaking & Moderation</h3>
+                <p>
+                    Keynotes, panels, and interviews on 
+                    AI, tech policy, and the culture of 
+                    innovation. Bringing Silicon Valley 
+                    insights to global audiences.
+                </p>
+            </div>
+            <div class="service-card">
+                <h3>Journalism & Reporting</h3>
+                <p>
+                    Weekly analysis and breaking news 
+                    coverage for top-tier German media 
+                    outlets including FAZ and ARD, with 
+                    deep Silicon Valley sourcing.
+                </p>
+            </div>
+            <div class="service-card">
+                <h3>Video & Audio Production</h3>
+                <p>
+                    Executive interviews, explainers, and 
+                    event coverage with editorial depth. 
+                    Professional production meets 
+                    journalistic integrity.
+                </p>
+            </div>
+            <div class="service-card">
+                <h3>Strategic Media Consulting</h3>
+                <p>
+                    Narrative development for 
+                    companies, founders, and public 
+                    figures. Helping shape stories that 
+                    resonate in today's media 
+                    landscape.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Recent Work Section -->
+<section class="recent-work-section">
+    <div class="container">
+        <h2>Recent Work</h2>
+        <div class="work-grid">
+            <div class="work-card">
+                <span class="work-type">Podcast</span>
+                <h3>AI Deep Dive</h3>
+                <p>
+                    Comprehensive podcast series for 
+                    German public radio exploring AI's 
+                    impact on society and business
+                </p>
+            </div>
+            <div class="work-card">
+                <span class="work-type">Broadcasting</span>
+                <h3>Tech in Context</h3>
+                <p>
+                    On-camera reporting for ARD, 
+                    bringing Silicon Valley tech stories 
+                    to German audiences
+                </p>
+            </div>
+            <div class="work-card">
+                <span class="work-type">Speaking</span>
+                <h3>Tech Policy Keynote</h3>
+                <p>
+                    Expert commentary on AI regulation, 
+                    innovation policy, and the 
+                    intersection of technology and 
+                    governance
+                </p>
+            </div>
+            <div class="work-card">
+                <span class="work-type">Consulting</span>
+                <h3>AI Content Strategy</h3>
+                <p>
+                    Helping agencies and companies 
+                    develop narrative clarity and 
+                    editorial tone for AI-focused content
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Work With Us CTA -->
+<section class="cta-section">
+    <div class="container">
+        <h2>Work With Us</h2>
+        <p class="cta-description">
+            Whether you're a broadcaster, editor, founder, or conference organizer — 
+            let's discuss how we can help tell your story with the depth and clarity it 
+            deserves.
+        </p>
+        <a href="mailto:marcus@schuler.media" class="email-btn">marcus@schuler.media</a>
+        <p class="location">Based in San Francisco, working globally</p>
+    </div>
 </section>
 {{ end }}

@@ -1,0 +1,76 @@
+{{ define "main" }}
+<div class="blog-container">
+    <div class="blog-grid">
+        <main class="blog-main">
+            <div class="posts-grid">
+                {{ $paginator := .Paginate .Pages 4 }}
+                {{ range $paginator.Pages }}
+                <article class="post-card">
+                    {{ with .Params.image }}
+                    <div class="post-image">
+                        <img src="{{ . }}" alt="{{ $.Title }}">
+                        {{ with $.Params.category }}
+                        <span class="post-category">{{ . }}</span>
+                        {{ end }}
+                    </div>
+                    {{ end }}
+                    <div class="post-content">
+                        <h2 class="post-title">
+                            <a href="{{ .Permalink }}">{{ .Title }}</a>
+                        </h2>
+                        <p class="post-excerpt">{{ .Summary | truncate 150 }}</p>
+                        <a href="{{ .Permalink }}" class="read-more">Read More</a>
+                    </div>
+                </article>
+                {{ end }}
+            </div>
+
+            {{ if gt $paginator.TotalPages 1 }}
+            <nav class="pagination">
+                {{ if $paginator.HasPrev }}
+                <a href="{{ $paginator.Prev.URL }}" class="page-link">← Previous</a>
+                {{ end }}
+                
+                {{ range $paginator.Pagers }}
+                <a href="{{ .URL }}" class="page-link {{ if eq . $paginator }}active{{ end }}">{{ .PageNumber }}</a>
+                {{ end }}
+                
+                {{ if $paginator.HasNext }}
+                <a href="{{ $paginator.Next.URL }}" class="page-link">Next →</a>
+                {{ end }}
+            </nav>
+            {{ end }}
+        </main>
+
+        <aside class="blog-sidebar">
+            <div class="sidebar-section">
+                <h3>Recent Posts</h3>
+                <ul class="recent-posts">
+                    {{ range first 3 .Site.RegularPages }}
+                    <li class="recent-post-item">
+                        {{ with .Params.thumbnail }}
+                        <img src="{{ . }}" alt="{{ $.Title }}" class="recent-post-thumb">
+                        {{ end }}
+                        <div class="recent-post-content">
+                            <h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
+                            <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+                        </div>
+                    </li>
+                    {{ end }}
+                </ul>
+            </div>
+
+            <div class="sidebar-section">
+                <h3>Social</h3>
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+                    <a href="#" class="social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </aside>
+    </div>
+</div>
+{{ end }}

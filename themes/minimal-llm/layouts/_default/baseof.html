@@ -68,6 +68,7 @@
             color: var(--text-dark);
             text-decoration: none;
             transition: color 0.2s ease;
+            font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
         }
         
         .logo:hover {
@@ -209,6 +210,22 @@
     {{ $css := resources.Get "css/home.css" | minify }}
     <link rel="stylesheet" href="{{ $css.Permalink }}">
     
+    {{ $iwriterCss := resources.Get "css/iwriter.css" | minify }}
+    <link rel="stylesheet" href="{{ $iwriterCss.Permalink }}">
+    
+    {{ if or (eq .Section "posts") (eq .Type "posts") }}
+    {{ $blogCss := resources.Get "css/blog.css" | minify }}
+    <link rel="stylesheet" href="{{ $blogCss.Permalink }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    {{ end }}
+    
+    {{ if eq .Layout "articles" }}
+    {{ $articlesCss := resources.Get "css/articles.css" | minify }}
+    <link rel="stylesheet" href="{{ $articlesCss.Permalink }}">
+    {{ end }}
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
     {{ block "head" . }}{{ end }}
 </head>
 <body>
@@ -221,7 +238,7 @@
                     <ul id="nav-menu">
                         <li><a href="/" {{ if .IsHome }}class="active"{{ end }}>Home</a></li>
                         <li><a href="/about/" {{ if eq .Section "about" }}class="active"{{ end }}>About</a></li>
-                        <li><a href="/posts/" {{ if eq .Section "posts" }}class="active"{{ end }}>Posts</a></li>
+                        <li><a href="/articles/" {{ if eq .Section "articles" }}class="active"{{ end }}>Articles</a></li>
                         <li><a href="/contact/" {{ if eq .Section "contact" }}class="active"{{ end }}>Contact</a></li>
                     </ul>
                 </nav>
@@ -230,15 +247,20 @@
     </header>
     
     <main>
-        <div class="container">
-            {{ block "main" . }}{{ end }}
-        </div>
+        {{ block "main" . }}{{ end }}
     </main>
     
     <footer>
         <div class="container">
-            <p>&copy; {{ now.Year }} {{ .Site.Title }}. All rights reserved.</p>
-            <p><a href="/sitemap.xml">Sitemap</a> | <a href="/index.xml">RSS Feed</a></p>
+            <h3 class="footer-title">Follow me</h3>
+            <div class="social-links">
+                <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-link" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                <a href="#" class="social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p>&copy; {{ now.Year }} {{ .Site.Title }} | Theme by <a href="#">staticburst</a></p>
         </div>
     </footer>
     

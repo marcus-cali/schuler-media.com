@@ -1,0 +1,117 @@
+/* Articles Page Styles */
+.articles-page {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 3rem 0;
+}
+
+.articles-page h1 {
+    font-size: 2.5rem;
+    color: var(--text-dark);
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.articles-intro {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 3rem;
+    font-size: 1.1rem;
+    color: var(--text-light);
+    line-height: 1.7;
+}
+
+.publications-grid {
+    display: grid;
+    gap: 3rem;
+}
+
+.publication-section {
+    background: #f9fafb;
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+}
+
+.publication-section h2 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.articles-list {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.external-article {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+    transition: all 0.3s ease;
+}
+
+.external-article:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border-color: var(--primary-light);
+}
+
+.external-article h3 {
+    font-size: 1.25rem;
+    margin: 0 0 0.5rem 0;
+    line-height: 1.4;
+}
+
+.external-article h3 a {
+    color: var(--text-dark);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.external-article h3 a:hover {
+    color: var(--primary-color);
+}
+
+.external-article h3 a::after {
+    content: " ↗";
+    font-size: 0.9rem;
+    opacity: 0.5;
+}
+
+.article-meta {
+    font-size: 0.9rem;
+    color: #6b7280;
+    margin: 0 0 0.75rem 0;
+    font-weight: 500;
+}
+
+.external-article p:last-child {
+    margin: 0;
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .articles-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 767px) {
+    .articles-page h1 {
+        font-size: 2rem;
+    }
+    
+    .publication-section {
+        padding: 1.5rem;
+    }
+    
+    .external-article {
+        padding: 1.25rem;
+    }
+}
