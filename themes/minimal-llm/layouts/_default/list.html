@@ -1,25 +1,35 @@
 {{ define "main" }}
-<section>
-    <h1>{{ .Title }}</h1>
-    
-    {{ with .Content }}
-    <div class="content">
-        {{ . }}
-    </div>
+<div class="container">
+    {{ if or (eq .Section "about") (eq .Section "contact") }}
+    <article class="{{ .Section }}-page">
+        <div class="content">
+            {{ .Content }}
+        </div>
+    </article>
+    {{ else }}
+    <section>
+        <h1>{{ .Title }}</h1>
+        
+        {{ with .Content }}
+        <div class="content">
+            {{ . }}
+        </div>
+        {{ end }}
+        
+        <ul>
+        {{ range .Pages }}
+            <li>
+                <article>
+                    <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+                    <p class="metadata">
+                        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+                    </p>
+                    <p>{{ .Summary }}</p>
+                </article>
+            </li>
+        {{ end }}
+        </ul>
+    </section>
     {{ end }}
-    
-    <ul>
-    {{ range .Pages }}
-        <li>
-            <article>
-                <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-                <p class="metadata">
-                    <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
-                </p>
-                <p>{{ .Summary }}</p>
-            </article>
-        </li>
-    {{ end }}
-    </ul>
-</section>
+</div>
 {{ end }}
