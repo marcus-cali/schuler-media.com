@@ -1,0 +1,108 @@
+/* Thank You Page Styles */
+.thank-you-page {
+    padding: 4rem 0;
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.thank-you-page h1 {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+    font-weight: 700;
+}
+
+.thank-you-page h1:first-of-type {
+    font-size: 1.25rem;
+    color: var(--text-light);
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 1rem;
+}
+
+.thank-you-page > p:first-of-type {
+    font-size: 1.25rem;
+    color: var(--text-dark);
+    line-height: 1.8;
+    margin-bottom: 3rem;
+}
+
+/* Success Icon */
+.thank-you-page:before {
+    content: "✓";
+    display: block;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 2rem;
+    background: var(--primary-color);
+    color: white;
+    border-radius: 50%;
+    line-height: 80px;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* CTA Section */
+.thank-you-page > p:nth-of-type(2) {
+    font-size: 1.125rem;
+    color: var(--text-light);
+    margin-bottom: 2rem;
+}
+
+.thank-you-page ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 3rem;
+}
+
+.thank-you-page ul li {
+    margin-bottom: 1.5rem;
+    font-size: 1.125rem;
+}
+
+.thank-you-page ul li:before {
+    content: "→";
+    color: var(--primary-color);
+    font-weight: bold;
+    margin-right: 0.75rem;
+}
+
+.thank-you-page a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    border-bottom: 2px solid transparent;
+}
+
+.thank-you-page a:hover {
+    color: var(--primary-light);
+    border-bottom-color: var(--primary-light);
+}
+
+/* Final message */
+.thank-you-page > p:last-child {
+    font-size: 1.125rem;
+    color: var(--text-light);
+    font-style: italic;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .thank-you-page {
+        padding: 3rem 1rem;
+    }
+    
+    .thank-you-page h1 {
+        font-size: 2.25rem;
+    }
+    
+    .thank-you-page:before {
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        font-size: 2rem;
+    }
+}
