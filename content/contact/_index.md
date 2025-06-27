@@ -1,6 +1,7 @@
 ---
 title: "Contact"
 date: 2025-01-24
+description: "Get in touch with Marcus Schuler for speaking engagements, media inquiries, and consulting projects."
 ---
 
 # Let's Connect
