@@ -224,6 +224,11 @@
     <link rel="stylesheet" href="{{ $articlesCss.Permalink }}">
     {{ end }}
     
+    {{ if eq .Section "about" }}
+    {{ $aboutCss := resources.Get "css/about.css" | minify }}
+    <link rel="stylesheet" href="{{ $aboutCss.Permalink }}">
+    {{ end }}
+    
     {{ if eq .Section "contact" }}
     {{ $contactCss := resources.Get "css/contact.css" | minify }}
     <link rel="stylesheet" href="{{ $contactCss.Permalink }}">
