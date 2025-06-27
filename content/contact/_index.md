@@ -7,7 +7,7 @@ date: 2025-01-24
 
 I'm always interested in new opportunities to collaborate, whether it's speaking at your event, contributing to your publication, or helping shape your company's narrative.
 
-<form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="contact-form">
+<form name="contact" method="POST" action="/thank-you/" data-netlify="true" netlify-honeypot="bot-field" class="contact-form">
   <input type="hidden" name="form-name" value="contact" />
   <p style="display:none;">
     <label>Don't fill this out if you're human: <input name="bot-field" /></label>
