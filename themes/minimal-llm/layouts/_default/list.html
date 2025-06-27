@@ -1,6 +1,6 @@
 {{ define "main" }}
 <div class="container">
-    {{ if or (eq .Section "about") (eq .Section "contact") }}
+    {{ if or (eq .Section "about") (eq .Section "contact") (eq .Section "thank-you") }}
     <article class="{{ .Section }}-page">
         <div class="content">
             {{ .Content }}
