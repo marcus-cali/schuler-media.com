@@ -1,52 +1,65 @@
-# About Page Content
+# about.md
 
 ## Main Title
-Building Bridges Between Silicon Valley and the World
+
+Building bridges between Silicon Valley and the world
 
 ## Introduction
-Marcus Schuler is an independent journalist and media strategist based in San Francisco, specializing in artificial intelligence, technology policy, and innovation culture. With over a decade of experience covering the tech industry, he brings journalistic rigor and strategic insight to help audiences understand the forces shaping our digital future.
+
+Schuler Media is an independent journalism and media strategy studio based in the San Francisco Bay Area. We specialize in artificial intelligence, technology policy, and the culture of innovation. Our work combines newsroom discipline with strategic storytelling to help audiences and clients understand the forces shaping the digital economy.
 
 ---
 
-## What I Do
+## What we do
 
 ### Journalism & Reporting
-As a correspondent for leading German media outlets including Frankfurter Allgemeine Zeitung (FAZ) and ARD, I translate Silicon Valley's innovations and disruptions for international audiences. My reporting focuses on AI development, tech regulation, startup culture, and the societal implications of emerging technologies.
+
+We translate Silicon Valley’s innovations and disruptions for international audiences. Our reporting focuses on AI, tech regulation, startup ecosystems, and the societal implications of emerging technologies.
 
 ### Newsletter Publishing
-I publish two influential newsletters:
-- **Implicator.ai**: A daily AI industry newsletter serving thousands of tech leaders, investors, and innovators with essential analysis and insights
-- **Filtr.de**: Curated AI news and analysis for German-speaking audiences, bridging the gap between Silicon Valley innovation and European perspectives
+
+**Implicator.ai** — a daily AI brief for decision-makers. Published Monday to Friday at 6:00 a.m. PT, it delivers essential analysis, context, and cues to what matters next.
 
 ### Speaking & Moderation
-I regularly speak at conferences and moderate panels on topics including:
-- The future of artificial intelligence and its societal impact
-- Tech policy and regulation in a global context
-- Innovation culture and entrepreneurship
-- The evolving media landscape in the digital age
+
+Conference keynotes and panel moderation on:
+
+* The future of AI and its societal impact
+* Tech policy and global regulation
+* Innovation culture and entrepreneurship
+* The evolving media landscape
 
 ### Strategic Media Consulting
-I help technology companies, startups, and thought leaders develop compelling narratives and communicate complex ideas with clarity. My approach combines journalistic storytelling with strategic positioning to create messages that resonate with diverse audiences.
+
+We help technology companies, startups, and thought leaders develop clear narratives. Our approach blends journalistic storytelling with positioning and message architecture so complex ideas land with the right audience.
 
 ---
 
-## Experience & Expertise
+## Expertise
 
-### Core Areas:
-- Artificial Intelligence & Machine Learning
-- Technology Policy & Regulation
-- Innovation & Startup Ecosystems
-- Digital Transformation
-- Media Strategy & Content Development
+* Artificial Intelligence & Machine Learning
+* Technology Policy & Regulation
+* Innovation & Startup Ecosystems
+* Digital Transformation
+* Media Strategy & Content Development
 
-### Media Appearances:
-Regular contributor to FAZ, ARD, Deutschlandfunk, and various international tech publications. Featured speaker at tech conferences across the US and Europe.
+### Where you may have seen our work
 
-### Details:
-- **Location:** San Francisco, California
-- **Languages:** English, German
+Regular contributor to FAZ, ARD, and Deutschlandfunk; featured speaker at conferences across the U.S. and Europe.
+
+### Details
+
+* **Location:** Napa, California (San Francisco Bay Area)
+* **Languages:** English, German
 
 ---
 
-## Call to Action
-For inquiries about speaking engagements, consulting, or media opportunities, please visit the contact page.
+## Founder
+
+**Marcus Schuler** is a journalist and media strategist covering the tech industry for more than a decade. As a correspondent for leading German media, he brings on-the-ground reporting, deep sourcing, and clear analysis to every story and stage.
+
+---
+
+## Call to action
+
+For speaking, consulting, or media inquiries, visit our contact page or email **[marcus@schuler.media](mailto:marcus@schuler.media)**.
