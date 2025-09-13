@@ -188,16 +188,11 @@ h2 {
 
 .services-grid {
   display: block;
-  max-width: var(--max-width);
-  margin: 0 auto;
-  padding: 0 20px;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
   gap: 0;
   text-align: left;
-}
-
-.services-section .container {
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 .service-card {
