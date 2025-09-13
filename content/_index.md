@@ -3,15 +3,15 @@ title: "Home"
 ---
 
 <div class="hero-section">
-  <h1 class="hero-title">Independent Media. Strategic Storytelling.</h1>
-  <p class="hero-subtitle">From Silicon Valley to America and Beyond</p>
+  <h1 class="hero-title">Schuler Media</h1>
+  <p class="hero-subtitle">Independent Media. Strategic Storytelling.</p>
   <div class="hero-description">
-    <p>Schuler Media LLC is a content studio led by journalist Marcus Schuler. We produce editorial reporting, corporate interviews, and tech keynotes for American and European audiences — all with journalistic clarity and strategic insight.</p>
+    <p>We are journalists, content creators, and strategic communicators who've covered Silicon Valley's most transformative companies. From AI breakthroughs to startup culture, we translate complex technologies into compelling narratives that inform and inspire.</p>
   </div>
 </div>
 
 <div class="newsletters-section">
-  <h2>Our Publications</h2>
+  <h2>Science is better when shared</h2>
   <div class="newsletter-grid">
     <div class="newsletter-card">
       <h3>Implicator.ai</h3>
@@ -29,7 +29,7 @@ title: "Home"
 </div>
 
 <div class="services-section">
-  <h2>What We Do</h2>
+  <h2>AI that works for everyone</h2>
   <div class="services-grid">
     <div class="service-card">
       <h3>Speaking & Moderation</h3>
@@ -51,7 +51,7 @@ title: "Home"
 </div>
 
 <div class="work-section">
-  <h2>Recent Work</h2>
+  <h2>Solid foundations matter</h2>
   <div class="work-grid">
     <div class="work-card">
       <span class="work-type">Podcast</span>
@@ -77,7 +77,7 @@ title: "Home"
 </div>
 
 <div class="contact-section">
-  <h2>Work With Us</h2>
+  <h2>Let's build something together</h2>
   <p class="contact-intro">Whether you're a broadcaster, editor, founder, or conference organizer — let's discuss how we can help tell your story with the depth and clarity it deserves.</p>
   <div class="contact-info">
     <a href="mailto:marcus@schuler.media" class="contact-link">marcus@schuler.media</a>
