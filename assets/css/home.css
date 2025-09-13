@@ -434,8 +434,12 @@ a:hover {
   }
 
   .hero-section {
-    padding: 40px 15px 30px;
+    padding: 40px 0 30px 0;
     text-align: left;
+  }
+
+  .hero-section .container {
+    padding: 0 15px;
   }
 
   h2 {
@@ -502,12 +506,29 @@ a:hover {
     padding: 40px 15px 30px;
   }
 
-  /* Reduce padding on all sections for mobile */
+  /* Ensure consistent padding on all sections for mobile */
   .container {
     padding: 0 15px;
+    max-width: 100%;
   }
 
   .services-grid {
+    padding: 0;
+    margin: 0;
+  }
+
+  .publications-section .container,
+  .services-section .container,
+  .contact-section .container {
     padding: 0 15px;
+  }
+
+  /* Ensure all content aligns to same edge */
+  .publication-card,
+  .service-card {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
