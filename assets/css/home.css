@@ -343,6 +343,38 @@ h2 {
   opacity: 1;
   font-size: 13px;
   color: #333;
+  margin-top: 8px;
+}
+
+/* Contact Section Styling */
+.contact-section {
+  padding: 80px 20px 120px;
+  background: transparent;
+}
+
+.contact-intro {
+  font-family: 'Iowan Old Style', Georgia, serif;
+  font-size: 17px;
+  line-height: 1.65;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.contact-info {
+  line-height: 1.8;
+}
+
+.contact-link {
+  font-family: 'Iowan Old Style', Georgia, serif;
+  font-size: 17px;
+  font-weight: 700;
+  color: #333;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.contact-link:hover {
+  opacity: 0.5;
 }
 
 /* Links */
