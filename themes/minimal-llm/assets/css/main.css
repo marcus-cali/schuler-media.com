@@ -35,7 +35,7 @@ body {
 
 /* Top Navigation */
 .top-nav {
-  position: fixed;
+  position: absolute;
   top: 30px;
   right: 40px;
   background: transparent;
