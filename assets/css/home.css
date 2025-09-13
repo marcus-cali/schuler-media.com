@@ -34,7 +34,7 @@ body {
 
 /* Hero Section - Minimal */
 .hero-section {
-  padding: 140px 20px 80px;
+  padding: 60px 20px 60px;
   text-align: left;
   background: transparent;
   border: none;
@@ -92,7 +92,7 @@ h2 {
   letter-spacing: 0;
   text-transform: none;
   color: #333;
-  margin: 100px 0 40px;
+  margin: 60px 0 30px;
   text-align: left;
   line-height: 1.2;
 }
@@ -407,12 +407,12 @@ a:hover {
   }
 
   .hero-section {
-    padding: 80px 20px 60px;
+    padding: 40px 20px 40px;
     text-align: left;
   }
 
   h2 {
-    margin: 60px 0 30px;
+    margin: 40px 0 25px;
     font-size: 20px;
     text-align: left;
   }
