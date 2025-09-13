@@ -86,3 +86,79 @@
     line-height: 1.6;
     color: #333;
 }
+
+/* Publication Sections */
+.publications-grid {
+    margin-top: 20px;
+}
+
+.publication-section {
+    margin-bottom: 60px;
+}
+
+.publication-section h2 {
+    font-family: 'Iowan Old Style', Georgia, serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #333;
+    margin: 50px 0 25px;
+    text-transform: none;
+}
+
+.articles-list {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.external-article {
+    margin-bottom: 30px;
+}
+
+.external-article h3 {
+    font-family: 'Iowan Old Style', Georgia, serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+.external-article h3 a {
+    color: #333;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+}
+
+.external-article h3 a:hover {
+    opacity: 0.5;
+}
+
+.external-article p {
+    margin-bottom: 8px;
+    margin-left: 0;
+}
+
+.external-article p em {
+    font-style: italic;
+    color: #666;
+}
+
+.author-index {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #f0f0f0;
+}
+
+.author-index p {
+    font-size: 15px;
+}
+
+.articles-intro {
+    margin-bottom: 40px;
+}
+
+.articles-intro p {
+    font-size: 17px;
+    line-height: 1.65;
+    margin-left: 0;
+}
