@@ -1,73 +1,76 @@
-# Homepage Content
+# homepage.md
 
 ## Hero Section
 
 ### Main Title
+
 Schuler Media
 
 ### Tagline
-Independent Media. Strategic Storytelling.
+
+Independent media. Strategic storytelling & podcast production.
 
 ### Hero Description
-We are journalists, content creators, and strategic communicators who've covered Silicon Valley's most transformative companies. From AI breakthroughs to startup culture, we translate complex technologies into compelling narratives that inform and inspire.
+
+We are a San Francisco–based journalism and content studio translating Silicon Valley for the world. From AI breakthroughs to platform regulation and startup culture, we turn complex technology into clear stories, briefings, podcasts, and broadcasts that inform decision-makers and inspire wider audiences. We produce end-to-end podcast series—from concept and booking to scripting, recording, editing, scoring, and distribution—grounded in newsroom standards. Our team brings on-the-ground reporting and executive-level communication to every project.
 
 ---
 
-## Section: Science is better when shared
+## Section: Our publication
 
 ### Implicator.ai
-**Tagline:** One of Silicon Valley's leading AI newsletters
 
-In-depth analysis of the AI industry, published Monday to Friday every morning at 6 AM PST. Essential reading for tech leaders, investors, and innovators staying ahead of the AI revolution.
+**Tagline:** A daily AI brief for busy leaders
+
+In-depth analysis of the AI industry, published Monday to Friday at 6:00 a.m. PT. Essential reading for executives, investors, and builders who need signal over noise and context you can act on.
 
 **Link:** Subscribe to Implicator →
 
-### Filtr.de
-**Tagline:** European AI insights in German
-
-Curated AI industry updates tailored for European audiences. Concise, focused coverage that bridges Silicon Valley innovation with European perspectives and regulations.
-
-**Link:** Subscribe to Filtr →
-
 ---
 
-## Section: AI that works for everyone
+## Section: What we do
 
 ### Speaking & Moderation
-Keynotes, panels, and interviews on AI, tech policy, and the culture of innovation. Bringing Silicon Valley insights to global audiences.
+
+Keynotes, panels, and interviews on AI, tech policy, and the culture of innovation—delivered with reporter rigor and audience-first clarity.
 
 ### Journalism & Reporting
-Weekly analysis and breaking news coverage for top-tier German media outlets including FAZ and ARD, with deep Silicon Valley sourcing.
+
+Weekly analysis and breaking news for top-tier German media (FAZ, ARD, Deutschlandfunk), backed by deep sourcing in the San Francisco Bay Area.
 
 ### Video & Audio Production
-Executive interviews, explainers, and event coverage with editorial depth. Professional production meets journalistic integrity.
+
+Executive interviews, explainers, and event coverage with editorial depth. Podcast development and production from pilots to multi-episode series.
 
 ### Strategic Media Consulting
-Narrative development for companies, founders, and public figures. Helping shape stories that resonate in today's media landscape.
+
+Narrative development for companies, founders, and public figures. Messaging frameworks, story playbooks, and editorial guidance that resonate across channels.
+
+### Employee Training (AI Literacy & Implementation)
+
+Elevate your team’s AI fluency and ship real use cases. We cover why AI literacy matters, how to implement AI in companies—from API integrations to network/router considerations—and how to make your brand discoverable inside ChatGPT, Claude, Gemini, and Perplexity. Book us for onsite or virtual company events and workshops.
 
 ---
 
-## Section: Solid foundations matter
+## Section: Selected work
 
-### Recent Work
+**Podcast — AI Deep Dive**
+A series for public radio examining AI’s impact on work, culture, and the economy.
 
-**Podcast - AI Deep Dive**
-Comprehensive podcast series for German public radio exploring AI's impact on society and business
+**Broadcast — Tech in Context**
+On-camera reporting that brings Silicon Valley stories to European audiences.
 
-**Broadcasting - Tech in Context**
-On-camera reporting for ARD, bringing Silicon Valley tech stories to German audiences
+**Keynote — Tech Policy & Regulation**
+Expert commentary on AI governance, platform power, and innovation policy.
 
-**Speaking - Tech Policy Keynote**
-Expert commentary on AI regulation, innovation policy, and the intersection of technology and governance
-
-**Consulting - AI Content Strategy**
-Helping agencies and companies develop narrative clarity and editorial tone for AI-focused content
+**Consulting — AI Content Strategy**
+Editorial tone, narrative clarity, and content roadmaps for AI-focused teams.
 
 ---
 
-## Section: Let's build something together
+## Section: Let’s build something together
 
-Whether you're a broadcaster, editor, founder, or conference organizer — let's discuss how we can help tell your story with the depth and clarity it deserves.
+Whether you’re a broadcaster, editor, founder, or conference organizer—we can help tell your story with depth and precision.
 
-**Email:** marcus@schuler.media
-**Location:** Based in San Francisco, working globally
+**Email:** [marcus@schuler.media](mailto:marcus@schuler.media)
+**Location:** San Francisco, California • Working globally
