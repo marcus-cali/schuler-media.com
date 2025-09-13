@@ -4,7 +4,7 @@ title: "Home"
 
 <div class="hero-section">
   <div class="container">
-    <h1 class="hero-title">Schuler Media</h1>
+    <h1 class="hero-title">SCHULER MEDIA</h1>
   <p class="hero-subtitle">Independent media. Strategic storytelling.</p>
   <div class="hero-description">
     <p>We are a Bay Area–based journalism and content studio translating Silicon Valley for the world. From AI breakthroughs to platform regulation and startup culture, we turn complex technology into clear stories, briefings, and broadcasts that inform decision-makers and inspire wider audiences.</p>
