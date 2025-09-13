@@ -20,7 +20,7 @@ title: "Home"
       <h3>Implicator.ai</h3>
       <p class="newsletter-tagline">A daily AI brief for busy leaders</p>
       <p>In-depth analysis of the AI industry, published Monday to Friday at 6:00 a.m. PT. Essential reading for executives, investors, and builders who need signal over noise and context you can act on.</p>
-      <a href="https://implicator.ai" class="cta-button">Subscribe to Implicator →</a>
+      <a href="https://implicator.ai" class="subscribe-btn">Subscribe to Implicator →</a>
     </div>
     </div>
   </div>
