@@ -8,10 +8,15 @@
     <meta name="robots" content="index, follow">
     
     <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}</title>
-    
+
     <link rel="canonical" href="{{ .Permalink }}">
     <link rel="sitemap" type="application/xml" href="{{ .Site.BaseURL }}sitemap.xml">
-    
+
+    <!-- Chakra Petch Font from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600&display=swap" rel="stylesheet">
+
     {{ hugo.Generator }}
     
     <style>
@@ -31,10 +36,10 @@
             box-sizing: border-box;
         }
 
-        body { 
-            font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; 
-            line-height: 1.6; 
-            color: var(--text-dark);
+        body {
+            font-family: 'Iowan Old Style', Georgia, Cambria, 'Times New Roman', Times, serif;
+            line-height: 1.65;
+            color: #333;
             background-color: var(--white);
         }
 
@@ -44,120 +49,66 @@
             padding: 0 2rem;
         }
         
-        /* Modern Header Styles */
-        header {
-            background: var(--white);
-            border-bottom: 1px solid var(--border-light);
-            position: sticky;
-            top: 0;
+        /* Top Navigation - No Header */
+        .top-nav {
+            position: fixed;
+            top: 30px;
+            right: 40px;
+            background: transparent;
+            border: none;
             z-index: 100;
-            backdrop-filter: blur(10px);
-            background-color: rgba(255, 255, 255, 0.95);
+            padding: 0;
+            margin: 0;
         }
         
-        .header-content {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 1rem 0;
-        }
         
-        .logo {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: var(--text-dark);
-            text-decoration: none;
-            transition: color 0.2s ease;
-            font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-        }
-        
-        .logo:hover {
-            color: var(--primary-color);
-        }
-        
-        /* Modern Navigation */
-        nav ul {
+        /* Navigation Links */
+        .top-nav ul {
             display: flex;
             list-style: none;
-            gap: 2rem;
+            gap: 30px;
             align-items: center;
+            margin: 0;
+            padding: 0;
         }
-        
-        nav ul li a {
-            color: var(--text-light);
+
+        .top-nav li {
+            display: inline;
+        }
+
+        .top-nav a {
+            font-family: 'Iowan Old Style', Georgia, serif;
+            color: #333;
             text-decoration: none;
-            font-weight: 500;
-            padding: 0.5rem 0;
-            position: relative;
-            transition: color 0.2s ease;
+            font-weight: 400;
+            font-size: 16px;
+            padding: 0;
+            transition: opacity 0.2s ease;
+        }
+
+        .top-nav a:hover {
+            opacity: 0.5;
         }
         
-        nav ul li a:hover {
-            color: var(--primary-color);
+        /* Active page */
+        .top-nav a.active {
+            color: #333;
+            font-weight: 700;
         }
         
-        /* Active page indicator */
-        nav ul li a.active {
-            color: var(--primary-color);
-        }
-        
-        nav ul li a.active::after {
-            content: '';
-            position: absolute;
-            bottom: -0.5rem;
-            left: 0;
-            right: 0;
-            height: 2px;
-            background: var(--primary-color);
-            border-radius: 1px;
-        }
-        
-        /* Mobile Navigation */
-        .mobile-menu-toggle {
-            display: none;
-            background: none;
-            border: none;
-            font-size: 1.5rem;
-            color: var(--text-dark);
-            cursor: pointer;
-        }
-        
+        /* Mobile */
         @media (max-width: 768px) {
-            .mobile-menu-toggle {
-                display: block;
+            .top-nav {
+                top: 20px;
+                right: 20px;
             }
-            
-            nav ul {
-                display: none;
-                position: absolute;
-                top: 100%;
-                left: 0;
-                right: 0;
-                background: var(--white);
-                border-top: 1px solid var(--border-light);
-                flex-direction: column;
-                gap: 0;
-                padding: 1rem 0;
-                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+            .top-nav ul {
+                gap: 20px;
             }
-            
-            nav ul.mobile-open {
-                display: flex;
-            }
-            
-            nav ul li {
-                width: 100%;
-                text-align: center;
-            }
-            
-            nav ul li a {
-                display: block;
-                padding: 1rem;
-                border-bottom: 1px solid var(--border-light);
-            }
-            
-            nav ul li:last-child a {
-                border-bottom: none;
+
+            .top-nav a {
+                font-size: 14px;
             }
         }
         
@@ -167,28 +118,41 @@
             padding: 2rem 0;
         }
         
-        /* Modern Footer */
-        footer { 
-            background: var(--background-light);
-            border-top: 1px solid var(--border-light);
+        /* Minimal Footer */
+        footer {
+            background: transparent;
+            border-top: 1px solid #f0f0f0;
             margin-top: 4rem;
             padding: 2rem 0;
             text-align: center;
         }
-        
+
+        footer * {
+            font-family: 'Iowan Old Style', Georgia, serif !important;
+        }
+
         footer p {
-            color: var(--text-light);
+            color: #666;
             margin-bottom: 0.5rem;
+            font-size: 13px;
         }
-        
+
+        footer .footer-title {
+            display: none;
+        }
+
+        footer .social-links {
+            display: none;
+        }
+
         footer a {
-            color: var(--primary-color);
+            color: #666;
             text-decoration: none;
-            transition: color 0.2s ease;
+            transition: opacity 0.2s ease;
         }
-        
+
         footer a:hover {
-            color: var(--primary-light);
+            opacity: 0.5;
         }
         
         /* Utility Classes */
@@ -201,9 +165,15 @@
             margin-bottom: 2rem; 
         }
         
-        h1, h2, h3 { 
-            line-height: 1.2; 
-            color: var(--text-dark);
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Iowan Old Style', Georgia, serif !important;
+            line-height: 1.3;
+            color: #333;
+            font-weight: 700;
+        }
+
+        p, li, span, div, td, th {
+            font-family: 'Iowan Old Style', Georgia, serif !important;
         }
     </style>
     
@@ -247,22 +217,14 @@
     <script defer src="https://umami.relusch.com/script.js" data-website-id="fd52a941-cd02-4b09-bc16-3dcc461202af"></script>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="header-content">
-                <a href="{{ .Site.BaseURL }}" class="logo">{{ .Site.Title }}</a>
-                <nav>
-                    <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</button>
-                    <ul id="nav-menu">
-                        <li><a href="/" {{ if .IsHome }}class="active"{{ end }}>Home</a></li>
-                        <li><a href="/about/" {{ if eq .Section "about" }}class="active"{{ end }}>About</a></li>
-                        <li><a href="/articles/" {{ if eq .Section "articles" }}class="active"{{ end }}>Articles</a></li>
-                        <li><a href="/contact/" {{ if eq .Section "contact" }}class="active"{{ end }}>Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </header>
+    <nav class="top-nav">
+        <ul>
+            <li><a href="/" {{ if .IsHome }}class="active"{{ end }}>Home</a></li>
+            <li><a href="/about/" {{ if eq .Section "about" }}class="active"{{ end }}>About</a></li>
+            <li><a href="/articles/" {{ if eq .Section "articles" }}class="active"{{ end }}>Work</a></li>
+            <li><a href="/contact/" {{ if eq .Section "contact" }}class="active"{{ end }}>Contact</a></li>
+        </ul>
+    </nav>
     
     <main>
         {{ block "main" . }}{{ end }}
@@ -282,22 +244,6 @@
         </div>
     </footer>
     
-    <script>
-        function toggleMobileMenu() {
-            const menu = document.getElementById('nav-menu');
-            menu.classList.toggle('mobile-open');
-        }
-        
-        // Close mobile menu when clicking outside
-        document.addEventListener('click', function(event) {
-            const menu = document.getElementById('nav-menu');
-            const toggle = document.querySelector('.mobile-menu-toggle');
-            
-            if (!menu.contains(event.target) && !toggle.contains(event.target)) {
-                menu.classList.remove('mobile-open');
-            }
-        });
-    </script>
     
     {{ if .IsHome }}
     <script type="application/ld+json">

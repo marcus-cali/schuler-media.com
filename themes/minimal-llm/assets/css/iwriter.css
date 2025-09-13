@@ -180,7 +180,7 @@ main {
     color: white;
     padding: 0.25rem 1rem;
     font-size: 0.75rem;
-    text-transform: uppercase;
+    text-transform: none;
     border-radius: 3px;
 }
 

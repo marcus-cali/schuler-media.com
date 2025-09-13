@@ -1,303 +1,387 @@
-/* Minimalistic Home Page Styles for Schuler Media */
+/* Ultra-Minimalist Home Page - Inspired by Thinking Machines */
 
 :root {
-  --primary-color: #2563eb;
-  --primary-light: #3b82f6;
-  --text-dark: #1f2937;
-  --text-light: #6b7280;
-  --background-light: #f8fafc;
-  --white: #ffffff;
-  --border-light: #e5e7eb;
+  --text-primary: #333;
+  --text-secondary: #333;
+  --text-light: #333;
+  --background: #ffffff;
+  --link-color: #333;
+  --max-width: 680px;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Iowan Old Style', Georgia, Cambria, 'Times New Roman', Times, serif;
+  color: #333;
+  background: var(--background);
+  line-height: 1.65;
+  font-size: 17px;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Hero Section - Minimal */
 .hero-section {
+  padding: 140px 20px 80px;
   text-align: center;
-  padding: 5rem 2rem;
-  background: var(--primary-color);
-  color: var(--white);
-  margin-bottom: 4rem;
-  position: relative;
-  overflow: hidden;
-}
-
-.hero-section::before {
-  display: none;
+  background: transparent;
+  border: none;
+  margin-top: 0;
 }
 
 .hero-title {
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-  line-height: 1.2;
-  color: var(--text-dark);
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  text-transform: none;
+  color: #333;
+  margin-bottom: 40px;
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
 }
 
 .hero-subtitle {
-  font-size: 1.25rem;
-  margin-bottom: 2rem;
-  font-weight: 400;
-  color: var(--text-light);
+  font-family: 'Iowan Old Style', Georgia, serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 30px;
+  letter-spacing: 0.5px;
+  text-transform: none;
 }
 
 .hero-description {
-  max-width: 700px;
+  font-family: 'Iowan Old Style', Georgia, serif;
+  font-size: 17px;
+  line-height: 1.65;
+  color: #333;
+  max-width: 680px;
   margin: 0 auto;
-  font-size: 1.1rem;
-  line-height: 1.7;
-  color: var(--text-light);
+  font-weight: 400;
 }
 
-/* Hero with white background instead of blue */
-.hero-section {
-  background: var(--white);
-  color: var(--text-dark);
-  padding: 3rem 2rem 4rem;
-}
-
-/* Publications Section */
-.publications-section {
-  background: var(--background-light);
-  padding: 4rem 2rem;
-  margin-bottom: 4rem;
-}
-
-.publications-section h2,
-.services-section h2,
-.recent-work-section h2,
-.cta-section h2 {
-  font-size: 2rem;
-  font-weight: 600;
-  color: var(--text-dark);
-  margin-bottom: 3rem;
+/* Section Headers */
+h2 {
+  font-family: 'Iowan Old Style', Georgia, serif;
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-transform: none;
+  color: #333;
+  margin: 100px 0 50px;
   text-align: center;
+  line-height: 1.2;
+}
+
+/* Publications - No Cards */
+.publications-section {
+  background: transparent;
+  padding: 0;
+  margin-bottom: 0;
 }
 
 .publications-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  max-width: 900px;
+  display: block;
+  max-width: var(--max-width);
   margin: 0 auto;
+  padding: 0 20px;
+  gap: 0;
 }
 
 .publication-card {
-  background: var(--white);
-  padding: 2.5rem;
-  border-radius: 12px;
-  border: 1px solid var(--border-light);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin-bottom: 60px;
+  border-radius: 0;
+  box-shadow: none;
+  transition: none;
 }
 
 .publication-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+  transform: none;
+  box-shadow: none;
 }
 
 .publication-card h3 {
-  color: var(--text-dark);
-  margin-bottom: 0.5rem;
-  font-size: 1.75rem;
+  font-family: 'Iowan Old Style', Georgia, serif;
+  font-size: 20px;
   font-weight: 700;
+  color: #333;
+  margin-bottom: 12px;
+  font-style: normal;
+  line-height: 1.4;
 }
 
 .publication-tagline {
-  color: var(--text-light);
-  font-weight: 600;
-  margin-bottom: 1rem;
-  font-size: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  font-family: 'Iowan Old Style', Georgia, serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-transform: none;
+  color: #333;
+  margin-bottom: 16px;
 }
 
 .publication-description {
-  color: var(--text-light);
-  line-height: 1.6;
-  margin-bottom: 1.5rem;
+  font-family: 'Iowan Old Style', Georgia, serif;
+  font-size: 17px;
+  line-height: 1.65;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: 400;
 }
 
 .subscribe-btn {
+  font-family: 'Iowan Old Style', Georgia, serif;
   display: inline-block;
-  background: var(--primary-color);
-  color: var(--white);
-  padding: 0.75rem 1.5rem;
-  border-radius: 6px;
+  background: transparent;
+  color: #333;
+  padding: 0;
+  border: none;
+  border-radius: 0;
   text-decoration: none;
-  font-weight: 500;
-  transition: background 0.2s ease;
-  font-size: 0.95rem;
+  font-weight: 700;
+  font-size: 14px;
+  transition: opacity 0.2s ease;
 }
 
 .subscribe-btn:hover {
-  background: var(--primary-light);
+  background: transparent;
+  opacity: 0.5;
   text-decoration: none;
-  color: var(--white);
+  color: #333;
 }
 
-/* Services Section */
+/* Services Section - Text Only */
 .services-section {
-  padding: 4rem 2rem;
-  background: var(--white);
+  padding: 0;
+  background: transparent;
 }
 
 .services-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  max-width: 1000px;
+  display: block;
+  max-width: var(--max-width);
   margin: 0 auto;
+  padding: 0 20px;
+  gap: 0;
 }
 
 .service-card {
-  background: var(--background-light);
-  padding: 2rem;
-  border-radius: 8px;
-  border: 1px solid var(--border-light);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin-bottom: 40px;
+  border-radius: 0;
+  box-shadow: none;
+  transition: none;
 }
 
 .service-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  border-color: var(--primary-light);
+  transform: none;
+  box-shadow: none;
+  border-color: transparent;
 }
 
 .service-card h3 {
-  color: var(--text-dark);
-  margin-bottom: 1rem;
-  font-size: 1.25rem;
-  font-weight: 600;
+  font-family: 'Iowan Old Style', Georgia, serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 16px;
+  font-style: normal;
+  line-height: 1.4;
 }
 
 .service-card p {
-  color: var(--text-light);
-  line-height: 1.6;
-  font-size: 0.95rem;
+  font-family: 'Iowan Old Style', Georgia, serif;
+  font-size: 17px;
+  line-height: 1.65;
+  color: #333;
+  font-weight: 400;
 }
 
 /* Recent Work Section */
 .recent-work-section {
-  background: var(--background-light);
-  padding: 4rem 2rem;
+  background: transparent;
+  padding: 0;
 }
 
 .work-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  max-width: 1000px;
+  display: block;
+  max-width: var(--max-width);
   margin: 0 auto;
+  padding: 0 20px;
+  gap: 0;
 }
 
 .work-card {
-  background: var(--white);
-  padding: 2rem;
-  border-radius: 8px;
-  border: 1px solid var(--border-light);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin-bottom: 35px;
+  border-radius: 0;
+  box-shadow: none;
+  transition: none;
   position: relative;
 }
 
 .work-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+  transform: none;
+  box-shadow: none;
 }
 
 .work-type {
-  background: var(--primary-color);
-  color: var(--white);
-  padding: 0.3rem 0.8rem;
-  border-radius: 20px;
-  font-size: 0.75rem;
-  font-weight: 600;
+  font-family: 'Iowan Old Style', Georgia, serif;
+  background: transparent;
+  color: #333;
+  padding: 0;
+  border-radius: 0;
+  font-size: 12px;
+  font-weight: 700;
   display: inline-block;
-  margin-bottom: 1rem;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+  text-transform: none;
+  letter-spacing: 0;
 }
 
 .work-card h3 {
-  color: var(--text-dark);
-  margin-bottom: 0.75rem;
-  font-size: 1.25rem;
-  font-weight: 600;
+  font-family: 'Iowan Old Style', Georgia, serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 12px;
+  font-style: normal;
+  line-height: 1.4;
 }
 
 .work-card p {
-  color: var(--text-light);
-  line-height: 1.6;
-  font-size: 0.95rem;
+  font-family: 'Iowan Old Style', Georgia, serif;
+  font-size: 17px;
+  line-height: 1.65;
+  color: #333;
+  font-weight: 400;
 }
 
-/* CTA Section */
+/* CTA Section - Minimal */
 .cta-section {
-  background: #1e293b;
-  color: var(--white);
-  padding: 4rem 2rem;
-  text-align: center;
+  background: transparent;
+  color: var(--text-primary);
+  padding: 80px 20px 60px;
+  text-align: left;
+  border-top: 1px solid #f0f0f0;
+  margin-top: 60px;
 }
 
 .cta-section h2 {
-  color: var(--white);
-  margin-bottom: 1.5rem;
+  color: var(--text-secondary);
+  margin-bottom: 30px;
+  margin-top: 0;
 }
 
 .cta-description {
-  font-size: 1.1rem;
-  line-height: 1.7;
-  margin-bottom: 2rem;
-  opacity: 0.9;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
+  font-family: 'Iowan Old Style', Georgia, serif;
+  font-size: 17px;
+  line-height: 1.65;
+  margin-bottom: 30px;
+  opacity: 1;
+  max-width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  color: #333;
+  font-weight: 400;
 }
 
 .email-btn {
+  font-family: 'Iowan Old Style', Georgia, serif;
   display: inline-block;
-  background: var(--primary-color);
-  color: var(--white);
-  padding: 1rem 2rem;
-  border-radius: 6px;
+  background: transparent;
+  color: #333;
+  padding: 0;
+  border: none;
+  border-radius: 0;
   text-decoration: none;
-  font-weight: 500;
-  transition: background 0.2s ease;
-  font-size: 1.1rem;
-  margin-bottom: 1rem;
+  font-weight: 700;
+  font-size: 15px;
+  margin-bottom: 20px;
+  transition: opacity 0.2s ease;
 }
 
 .email-btn:hover {
-  background: var(--primary-light);
+  background: transparent;
+  opacity: 0.5;
   text-decoration: none;
-  color: var(--white);
+  color: #333;
 }
 
 .location {
-  opacity: 0.7;
-  font-size: 0.95rem;
+  font-family: 'Iowan Old Style', Georgia, serif;
+  opacity: 1;
+  font-size: 13px;
+  color: #333;
+}
+
+/* Links */
+a {
+  color: #333;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+a:hover {
+  opacity: 0.5;
+  text-decoration: none;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
   .hero-title {
-    font-size: 2rem;
+    font-size: 32px;
+    letter-spacing: 4px;
   }
-  
+
   .hero-section {
-    padding: 3rem 1rem;
+    padding: 80px 20px 60px;
   }
-  
-  .publications-grid,
-  .services-grid,
-  .work-grid {
-    grid-template-columns: 1fr;
-    padding: 0 1rem;
+
+  h2 {
+    margin: 60px 0 30px;
   }
-  
+
+  .publication-card {
+    margin-bottom: 50px;
+  }
+
+  .service-card {
+    margin-bottom: 35px;
+  }
+
+  .work-card {
+    margin-bottom: 30px;
+  }
+
   .cta-section {
-    padding: 3rem 1rem;
-  }
-  
-  .email-btn {
-    font-size: 1rem;
-    padding: 0.875rem 1.75rem;
+    padding: 60px 20px 40px;
   }
 }

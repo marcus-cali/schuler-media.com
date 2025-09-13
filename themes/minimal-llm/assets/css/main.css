@@ -1,22 +1,263 @@
+/* Ultra-Minimalist Global Styles */
+
+:root {
+  --text-primary: #1a1a1a;
+  --text-secondary: #666666;
+  --text-light: #999999;
+  --background: #ffffff;
+  --link-color: #0066cc;
+  --max-width: 720px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global font override */
+* {
+  font-family: 'Iowan Old Style', Georgia, Cambria, 'Times New Roman', Times, serif !important;
+}
+
 body {
-  color: #222;
-  font-family: sans-serif;
-  line-height: 1.5;
-  margin: 1rem;
-  max-width: 768px;
+  font-family: 'Iowan Old Style', Georgia, Cambria, 'Times New Roman', Times, serif;
+  color: #333;
+  background: var(--background);
+  line-height: 1.65;
+  font-size: 17px;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
 }
 
-header {
-  border-bottom: 1px solid #222;
-  margin-bottom: 1rem;
+/* Top Navigation */
+.top-nav {
+  position: fixed;
+  top: 30px;
+  right: 40px;
+  background: transparent;
+  border: none;
+  z-index: 100;
+  padding: 0;
+  margin: 0;
 }
 
-footer {
-  border-top: 1px solid #222;
-  margin-top: 1rem;
+.top-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 30px;
 }
 
-a {
-  color: #00e;
+.top-nav li {
+  display: inline;
+}
+
+.top-nav a {
+  font-family: 'Iowan Old Style', Georgia, serif;
+  color: #333;
   text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  transition: opacity 0.2s ease;
+}
+
+.top-nav a:hover {
+  opacity: 0.5;
+}
+
+.top-nav a.active {
+  color: #333;
+  font-weight: 700;
+}
+
+/* Footer - Ultra Minimal */
+footer {
+  border-top: 1px solid #f0f0f0;
+  margin: 60px 0 0 0;
+  padding: 40px 20px;
+  text-align: center;
+  background: transparent;
+}
+
+footer * {
+  font-family: 'Iowan Old Style', Georgia, serif !important;
+}
+
+footer p {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  color: #666;
+  font-size: 13px;
+}
+
+footer .footer-title,
+footer .social-links {
+  display: none;
+}
+
+/* Links */
+a {
+  color: #333;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+  font-family: 'Iowan Old Style', Georgia, serif !important;
+}
+
+a:hover {
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+/* Main Content Area */
+main {
+  min-height: calc(100vh - 200px);
+  padding: 0;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Iowan Old Style', Georgia, serif;
+  font-weight: 700;
+  line-height: 1.3;
+  color: #333;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  text-transform: none;
+  color: var(--text-secondary);
+  margin: 60px 0 30px;
+}
+
+h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+p {
+  font-family: 'Iowan Old Style', Georgia, serif;
+  margin-bottom: 20px;
+  line-height: 1.65;
+  font-size: 17px;
+  font-weight: 400;
+  color: #333;
+}
+
+/* Container */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Article Styles */
+article {
+  max-width: var(--max-width);
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+article h1 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  font-weight: 400;
+}
+
+article .meta {
+  color: var(--text-light);
+  font-size: 14px;
+  margin-bottom: 40px;
+}
+
+article p {
+  font-family: 'Iowan Old Style', Georgia, serif;
+  font-size: 17px;
+  line-height: 1.65;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+/* List Styles */
+.list-page {
+  max-width: var(--max-width);
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.list-page h1 {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  text-transform: none;
+  color: var(--text-secondary);
+  margin-bottom: 40px;
+}
+
+.list-item {
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.list-item:last-child {
+  border-bottom: none;
+}
+
+.list-item h2 {
+  font-size: 20px;
+  margin: 0 0 10px 0;
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+.list-item h2 a {
+  color: var(--text-primary);
+  text-decoration: none;
+}
+
+.list-item h2 a:hover {
+  opacity: 0.7;
+}
+
+.list-item .date {
+  color: var(--text-light);
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.list-item .summary {
+  font-family: 'Iowan Old Style', Georgia, serif;
+  color: var(--text-primary);
+  font-size: 17px;
+  line-height: 1.65;
+  font-weight: 400;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  header nav ul {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  article h1 {
+    font-size: 26px;
+  }
 }

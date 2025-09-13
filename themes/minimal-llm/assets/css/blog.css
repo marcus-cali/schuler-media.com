@@ -57,7 +57,7 @@
     color: white;
     padding: 0.25rem 0.75rem;
     font-size: 0.75rem;
-    text-transform: uppercase;
+    text-transform: none;
     letter-spacing: 0.5px;
     border-radius: 3px;
 }
