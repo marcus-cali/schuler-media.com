@@ -35,7 +35,7 @@ body {
 
 /* Hero Section - Minimal */
 .hero-section {
-  padding: 60px 20px 40px;
+  padding: 60px 20px 50px;
   text-align: left;
   background: transparent;
   border: none;
@@ -93,7 +93,7 @@ h2 {
   letter-spacing: 0;
   text-transform: none;
   color: #333;
-  margin: 40px 0 25px;
+  margin: 50px 0 25px;
   text-align: left;
   line-height: 1.2;
 }
@@ -360,8 +360,9 @@ h2 {
 
 /* Contact Section Styling */
 .contact-section {
-  padding: 40px 20px 120px;
+  padding: 0 20px 120px;
   background: transparent;
+  margin-top: 50px;
 }
 
 .contact-intro {
